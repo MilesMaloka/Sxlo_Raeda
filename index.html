@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en" class="transition-colors duration-500">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sxlo Raeda - Official Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Urbanist', 'sans-serif'],
+            },
+          },
+        },
+      }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&display=swap" rel="stylesheet" />
+    <style>
+        .animate-fade-in {
+          animation: fadeIn 1s ease-in;
+        }
+        @keyframes fadeIn {
+          from { opacity: 0; transform: translateY(20px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+          /* Gallery */
+          .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+            }
+            .scrollbar-hide {
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+            }
+       
+        
+      </style>
+  </head>
+  <body class="bg-white text-zinc-900 dark:bg-black dark:text-white transition-colors duration-500">
+    <header class="sticky top-0 z-50 bg-white dark:bg-zinc-900 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex justify-between items-center py-4">
+            <div class="text-2xl font-bold text-black dark:text-white">Sxlo Raeda</div>
+            <div class="hidden md:flex space-x-6">
+              <a href="#hero" class="text-black dark:text-white hover:text-zinc-500">Home</a>
+              <a href="#gallery" class="text-black dark:text-white hover:text-zinc-500">Gallery</a>
+              <a href="#music" class="text-black dark:text-white hover:text-zinc-500">Music</a>
+              <a href="#contact" class="text-black dark:text-white hover:text-zinc-500">Contact</a>
+            </div>
+            <button id="menu-btn" class="md:hidden text-black dark:text-white focus:outline-none">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+              </svg>
+            </button>
+          </div>
+          <div id="mobile-menu" class="hidden md:hidden flex-col space-y-4 pb-4">
+            <a href="#hero" class="text-black dark:text-white hover:text-zinc-500">Home</a>
+            <a href="#gallery" class="text-black dark:text-white hover:text-zinc-500">Gallery</a>
+            <a href="#music" class="text-black dark:text-white hover:text-zinc-500">Music</a>
+            <a href="#contact" class="text-black dark:text-white hover:text-zinc-500">Contact</a>
+          </div>
+        </div>
+    </header>
+
+    
+
+    <section id="hero" class="relative bg-cover bg-center bg-no-repeat h-screen flex items-center justify-center text-center text-white" style="background-image: url('assets/sxlo_banner.jpg');">
+        <div class="absolute inset-0 bg-black/50"></div>
+        <div class="relative z-10">
+          <h1 class="text-5xl md:text-6xl font-extrabold mb-4 animate-fade-in-up">Sxlo Raeda</h1>
+          <p class="text-xl md:text-2xl mb-6 animate-fade-in-up delay-200">Follow Here</p>
+          <div class="relative z-10 mt-6 flex justify-center gap-6 flex-wrap">
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/sxloraeda_sa" target="_blank" aria-label="Instagram" class="text-white hover:text-pink-400 transition transform hover:scale-110">
+              <svg class="w-6 h-6 sm:w-8 sm:h-8" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M7.75 2A5.75 5.75 0 002 7.75v8.5A5.75 5.75 0 007.75 22h8.5A5.75 5.75 0 0022 16.25v-8.5A5.75 5.75 0 0016.25 2h-8.5zm0 1.5h8.5A4.25 4.25 0 0120.5 7.75v8.5a4.25 4.25 0 01-4.25 4.25h-8.5a4.25 4.25 0 01-4.25-4.25v-8.5A4.25 4.25 0 017.75 3.5zm8.5 2.25a1.25 1.25 0 100 2.5 1.25 1.25 0 000-2.5zM12 7a5 5 0 100 10 5 5 0 000-10zm0 1.5a3.5 3.5 0 110 7 3.5 3.5 0 010-7z"/>
+              </svg>
+            </a>
+            <!-- TikTok -->
+            <a href="https://www.tiktok.com/@sxloraedasa" target="_blank" aria-label="TikTok" class="text-white hover:text-stone-400 transition transform hover:scale-110">
+                <svg class="w-6 h-7 sm:w-6 sm:h-8" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+                    <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+                  </svg>
+            </a>
+          
+            <!-- Twitter (X) -->
+            <a href="https://x.com/SxloRaedaSA" target="_blank" aria-label="Twitter" class="text-white hover:text-blue-400 transition transform hover:scale-110">
+              <svg class="w-6 h-6 sm:w-8 sm:h-8" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M8.29 20c7.547 0 11.675-6.155 11.675-11.49 0-.175 0-.349-.012-.522A8.18 8.18 0 0022 5.92a8.333 8.333 0 01-2.357.636 4.077 4.077 0 001.804-2.234 8.223 8.223 0 01-2.605.982A4.104 4.104 0 0015.447 4a4.072 4.072 0 00-4.066 4.072c0 .32.036.634.105.933A11.61 11.61 0 013.162 4.968a4.05 4.05 0 00-.553 2.047 4.07 4.07 0 001.813 3.39 4.093 4.093 0 01-1.85-.507v.05a4.074 4.074 0 003.265 3.994 4.1 4.1 0 01-1.842.07 4.079 4.079 0 003.807 2.81A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"/>
+              </svg>
+            </a>
+          
+            <!-- Facebook -->
+            <a href="https://facebook.com/solomonkamogelo.ramokone" target="_blank" aria-label="Facebook" class="text-white hover:text-blue-600 transition transform hover:scale-110">
+              <svg class="w-6 h-6 sm:w-8 sm:h-8" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M22 12.07C22 6.48 17.52 2 12 2S2 6.48 2 12.07C2 17.09 5.66 21.23 10.44 22v-7.03H7.9v-2.9h2.54V9.68c0-2.5 1.49-3.88 3.77-3.88 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.78l-.44 2.9h-2.34V22C18.34 21.23 22 17.09 22 12.07z"/>
+              </svg>
+            </a>
+            
+            <!-- YouTube -->
+            <a href="https://www.youtube.com/@SxloRaeda" target="_blank" aria-label="YouTube" class="text-white hover:text-red-500 transition transform hover:scale-110">
+                <svg class="w-6 h-6 sm:w-8 sm:h-8" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                    <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                  </svg>
+            </a>
+
+            <!-- Apple Music -->
+            <a href="https://music.apple.com/za/artist/sxlo-raeda/1622244511" target="_blank" aria-label="Apple Music" class="text-white hover:text-rose-400 transition transform hover:scale-110">
+                <svg class="w-6 h-6 sm:w-8 sm:h-8" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-apple" viewBox="0 0 16 16">
+                    <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282"/>
+                    <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282"/>
+                  </svg>
+            </a>
+          
+            <!-- Spotify -->
+            <a href="https://open.spotify.com/artist/7g5q38jL9x5Nhg4H8zv2ya?" target="_blank" aria-label="Spotify" class="text-white hover:text-green-400 transition transform hover:scale-110">
+              <svg class="w-6 h-6 sm:w-8 sm:h-8" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 0a12 12 0 1012 12A12 12 0 0012 0zm5.38 17.44a.75.75 0 01-1.03.27c-2.82-1.72-6.37-2.1-10.57-1.13a.75.75 0 01-.35-1.46c4.59-1.1 8.57-.68 11.77 1.31a.75.75 0 01.18 1.01zm1.48-3.01a.94.94 0 01-1.28.34c-3.23-1.97-8.14-2.54-11.93-1.36a.94.94 0 11-.54-1.81c4.3-1.29 9.74-.65 13.45 1.63.45.28.59.87.3 1.2zm.17-3.04C15.43 9.99 8.57 9.7 5.83 10.51a1.13 1.13 0 01-.63-2.16c3.23-.94 10.75-.63 14.47 1.5a1.13 1.13 0 11-1.08 1.98z"/>
+              </svg>
+            </a>
+          </div>
+        <div class="mt-40 animate-fade-in-up delay-400">
+            <a href="#gallery" aria-label="Scroll Down" class="text-white hover:text-zinc-400 transition transform hover:scale-110">
+            <svg class="w-8 h-8 mx-auto animate-bounce" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 16l-6-6h12l-6 6z" />
+            </svg>
+            </a>
+        </div>
+    </section>
+      
+
+    <!-- Gallery -->
+    <section id="gallery" class="bg-zinc-100 dark:bg-zinc-900 py-12 px-6 animate-fade-in">
+        <h3 class="text-3xl font-bold text-center mb-6">Gallery</h3>
+        <div class="relative max-w-6xl mx-auto">
+          <div class="flex overflow-x-auto gap-6 scrollbar-hide scroll-smooth px-2" id="cardCarousel">
+            
+            <div class="flex-shrink-0 w-64 bg-white dark:bg-zinc-800 rounded-x</svg>l shadow-lg transform hover:scale-105 transition">
+              <img src="assets/sxlo1.jpg" alt="Live 2" class="rounded-t-xl object-cover h-40 w-full" />
+            </div>
+            <div class="flex-shrink-0 w-64 bg-white dark:bg-zinc-800 rounded-xl shadow-lg transform hover:scale-105 transition">
+              <img src="assets/sxlo2.jpg" alt="Studio" class="rounded-t-xl object-cover h-40 w-full" />
+            </div>
+            <div class="flex-shrink-0 w-64 bg-white dark:bg-zinc-800 rounded-xl shadow-lg transform hover:scale-105 transition">
+              <img src="assets/sxlo3.jpg" alt="Fans" class="rounded-t-xl object-cover h-40 w-full" />
+            </div>
+            <div class="flex-shrink-0 w-64 bg-white dark:bg-zinc-800 rounded-xl shadow-lg transform hover:scale-105 transition">
+                <img src="assets/sxlo5.jpg" alt="Live 1" class="rounded-t-xl object-cover h-40 w-full" />
+              </div>
+            <div class="flex-shrink-0 w-64 bg-white dark:bg-zinc-800 rounded-xl shadow-lg transform hover:scale-105 transition">
+              <img src="assets/sxlo7.jpg" alt="Fans" class="rounded-t-xl object-cover h-40 w-full" />
+            </div>
+            <div class="flex-shrink-0 w-64 bg-white dark:bg-zinc-800 rounded-xl shadow-lg transform hover:scale-105 transition">
+              <img src="assets/sxlo8(1).jpg" alt="Fans" class="rounded-t-xl object-cover h-40 w-full" />
+            </div>
+            <div class="flex-shrink-0 w-64 bg-white dark:bg-zinc-800 rounded-xl shadow-lg transform hover:scale-105 transition">
+              <img src="assets/sxlo9.jpg" alt="Fans" class="rounded-t-xl object-cover h-40 w-full" />
+            </div>
+            <div class="flex-shrink-0 w-64 bg-white dark:bg-zinc-800 rounded-xl shadow-lg transform hover:scale-105 transition">
+              <img src="assets/sxlo10.jpg" alt="Fans" class="rounded-t-xl object-cover h-40 w-full" />
+            </div>
+            <div class="flex-shrink-0 w-64 bg-white dark:bg-zinc-800 rounded-xl shadow-lg transform hover:scale-105 transition">
+              <img src="assets/sxlo11(1).jpg" alt="Fans" class="rounded-t-xl object-cover h-40 w-full" />
+            </div>
+            <div class="flex-shrink-0 w-64 bg-white dark:bg-zinc-800 rounded-xl shadow-lg transform hover:scale-105 transition">
+              <img src="assets/sxlo12.jpg" alt="Fans" class="rounded-t-xl object-cover h-40 w-full" />
+            </div>
+            <div class="flex-shrink-0 w-64 bg-white dark:bg-zinc-800 rounded-xl shadow-lg transform hover:scale-105 transition">
+              <img src="assets/sxlo13.jpg" alt="Fans" class="rounded-t-xl object-cover h-40 w-full" />
+            </div>
+            <div class="flex-shrink-0 w-64 bg-white dark:bg-zinc-800 rounded-xl shadow-lg transform hover:scale-105 transition">
+              <img src="assets/sxlo14.jpg" alt="Fans" class="rounded-t-xl object-cover h-40 w-full" />
+            </div>
+            <div class="flex-shrink-0 w-64 bg-white dark:bg-zinc-800 rounded-xl shadow-lg transform hover:scale-105 transition">
+              <img src="assets/sxlo15.jpg" alt="Fans" class="rounded-t-xl object-cover h-40 w-full" />
+            </div>
+            <div class="flex-shrink-0 w-64 bg-white dark:bg-zinc-800 rounded-xl shadow-lg transform hover:scale-105 transition">
+              <img src="assets/sxlo16.jpg" alt="Fans" class="rounded-t-xl object-cover h-40 w-full" />
+            </div>
+
+          </div>
+          <div class="flex justify-between mt-4 px-4">
+            <button onclick="scrollCarousel(-1)" class="bg-black/50 text-white p-2 rounded-full hover:bg-black">❮</button>
+            <button onclick="scrollCarousel(1)" class="bg-black/50 text-white p-2 rounded-full hover:bg-black">❯</button>
+          </div>
+        </div>
+      </section>
+      
+     
+      
+    <section id="music" class="bg-zinc-100 dark:bg-zinc-900 py-12 px-4 animate-fade-in">
+      <h3 class="text-3xl font-bold text-center mb-10">Music</h3>
+      <div class="max-w-3xl mx-auto space-y-6">
+        <div class="flex justify-between items-center bg-white dark:bg-zinc-800 p-6 rounded-xl shadow hover:scale-[1.02] transition">
+          <span class="text-lg font-semibold">Poo Pedi</span>
+          <audio controls class="w-48">
+            <source src="assets/SXLO RAEDA - POO PEDI(JOUSKA WEDNESDAYS) - Sxlo Raeda.mp3" type="audio/mpeg" />
+          </audio>
+        </div>
+        <div class="flex justify-between items-center bg-white dark:bg-zinc-800 p-6 rounded-xl shadow hover:scale-[1.02] transition">
+          <span class="text-lg font-semibold">Peace of Mind (ft. Biigmill & Dj Zac)</span>
+          <audio controls class="w-48">
+            <source src="assets/PEACE OF MIND FT. BIIGMILL & DJ ZAC(JOUSKA WEDNESDAYS) - Sxlo Raeda.mp3" type="audio/mpeg" />
+          </audio>
+        </div>
+        <div class="flex justify-between items-center bg-white dark:bg-zinc-800 p-6 rounded-xl shadow hover:scale-[1.02] transition">
+          <span class="text-lg font-semibold">Your Anniversary</span>
+          <audio controls class="w-48">
+            <source src="assets/SXLO RAEDA - YOUR ANNIVERSARY(JOUSKA WEDNESDAYS) - Sxlo Raeda.mp3" type="audio/mpeg" />
+          </audio>
+        </div>
+      </div>
+
+      <div class="mt-12 space-y-10">
+        <h4 class="text-2xl font-semibold text-center">Listen on Your Favorite Platform</h4>
+        <div class="flex flex-col md:flex-row justify-center items-center gap-6">
+           
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/7g5q38jL9x5Nhg4H8zv2ya?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          <iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/album/708016931" width="100%" height="152" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
+          <iframe width="100%" height="152" src="https://www.youtube.com/embed/i5o8Ecdgn8g?si=QLTHWO2SGp3mz_qg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+         
+          
+        </div>
+      </div>
+    </section>
+
+    <section id="video" class="bg-zinc-50 dark:bg-zinc-800 py-12 px-6 animate-fade-in">
+      <h3 class="text-3xl font-bold text-center mb-6">Featured Music Video</h3>
+      <div class="flex justify-center">
+        <iframe width="100%" height="400" class="max-w-3xl rounded-xl shadow-xl" src="https://www.youtube.com/embed/jfgavTJD63M" title="Sxlo Raeda - Featured Video" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section id="about" class="bg-zinc-50 dark:bg-zinc-800 py-12 px-6 animate-fade-in">
+      <h3 class="text-3xl font-bold text-center mb-6">About Sxlo Raeda</h3>
+      <p class="max-w-3xl mx-auto text-center text-lg text-zinc-600 dark:text-zinc-300">
+        Welcome To The Official Website Of Sxlo Raeda.
+        I Am A South African Songwriter,Singer And Record Producer.
+        In This Channel We Share Both Visual And Audio Music.
+        
+      </p>
+    </section>
+
+    <section id="contact" class="bg-zinc-50 dark:bg-zinc-800 py-12 px-6 animate-fade-in">
+      <h3 class="text-3xl font-bold text-center mb-6">Contact & Follow</h3>
+      <ul class="space-y-4 text-center text-lg text-zinc-700 dark:text-zinc-200">
+        <li><a href="mailto:music.sxloraeda@gmail.com" class="hover:underline">music.sxloraeda@gmail.com</a></li>
+        <li><a href="https://www.instagram.com/sxloraeda_sa" target="_blank" class="hover:underline">Instagram</a></li>
+        <li><a href="https://x.com/SxloRaedaSA" target="_blank" class="hover:underline">Twitter</a></li>
+        <li><a href="https://www.youtube.com/@SxloRaeda" target="_blank" class="hover:underline">YouTube</a></li>
+      </ul>
+    </section>
+    <button id="theme-toggle" class="fixed bottom-6 right-6 z-50 bg-black text-white dark:bg-white dark:text-black p-3 rounded-full shadow-lg transition hover:scale-110">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m8.66-10.34l-.71.71M4.05 4.05l.71.71m15.49 10.49l-.71-.71M4.76 19.24l.71-.71M21 12h-1M4 12H3m9-9a9 9 0 100 18 9 9 0 000-18z" />
+        </svg>
+      </button>
+
+    <footer class="bg-zinc-100 dark:bg-black py-6 text-center text-sm text-zinc-500 dark:text-zinc-400">
+      &copy; 2025 Sxlo Raeda. All rights reserved.
+    </footer>
+
+    <script>
+
+document.addEventListener("DOMContentLoaded", function () {
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  });
+    //Dark button theme
+    document.addEventListener("DOMContentLoaded", function () {
+    const toggleBtn = document.getElementById("theme-toggle");
+    const htmlEl = document.documentElement;
+
+    // Default to dark if no preference saved
+    if (!localStorage.getItem("theme")) {
+      htmlEl.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+    } else if (localStorage.getItem("theme") === "dark") {
+      htmlEl.classList.add("dark");
+    } else {
+      htmlEl.classList.remove("dark");
+    }
+
+    toggleBtn.addEventListener("click", () => {
+      htmlEl.classList.toggle("dark");
+      localStorage.setItem("theme", htmlEl.classList.contains("dark") ? "dark" : "light");
+    });
+  });
+    //   Gallery
+        const carousel = document.getElementById('cardCarousel');
+        function scrollCarousel(direction) {
+        const scrollAmount = 300;
+        carousel.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+        }
+   //Navbar
+   
+</script>
+       
+    
+
+   
+  </body>
+</html>
