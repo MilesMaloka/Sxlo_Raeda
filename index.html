@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sxlo Raeda - Official Website</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
     <script>
       tailwind.config = {
         darkMode: 'class',
@@ -19,25 +20,7 @@
       }
     </script>
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&display=swap" rel="stylesheet" />
-    <style>
-        .animate-fade-in {
-          animation: fadeIn 1s ease-in;
-        }
-        @keyframes fadeIn {
-          from { opacity: 0; transform: translateY(20px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
-          /* Gallery */
-          .scrollbar-hide::-webkit-scrollbar {
-            display: none;
-            }
-            .scrollbar-hide {
-                -ms-overflow-style: none;
-                scrollbar-width: none;
-            }
-       
-        
-      </style>
+   
   </head>
   <body class="bg-white text-zinc-900 dark:bg-black dark:text-white transition-colors duration-500">
     <header class="sticky top-0 z-50 bg-white dark:bg-zinc-900 shadow-md">
@@ -263,44 +246,7 @@
       &copy; 2025 Sxlo Raeda. All rights reserved.
     </footer>
 
-    <script>
-
-document.addEventListener("DOMContentLoaded", function () {
-    const menuBtn = document.getElementById("menu-btn");
-    const mobileMenu = document.getElementById("mobile-menu");
-    menuBtn.addEventListener("click", () => {
-      mobileMenu.classList.toggle("hidden");
-    });
-  });
-    //Dark button theme
-    document.addEventListener("DOMContentLoaded", function () {
-    const toggleBtn = document.getElementById("theme-toggle");
-    const htmlEl = document.documentElement;
-
-    // Default to dark if no preference saved
-    if (!localStorage.getItem("theme")) {
-      htmlEl.classList.add("dark");
-      localStorage.setItem("theme", "dark");
-    } else if (localStorage.getItem("theme") === "dark") {
-      htmlEl.classList.add("dark");
-    } else {
-      htmlEl.classList.remove("dark");
-    }
-
-    toggleBtn.addEventListener("click", () => {
-      htmlEl.classList.toggle("dark");
-      localStorage.setItem("theme", htmlEl.classList.contains("dark") ? "dark" : "light");
-    });
-  });
-    //   Gallery
-        const carousel = document.getElementById('cardCarousel');
-        function scrollCarousel(direction) {
-        const scrollAmount = 300;
-        carousel.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
-        }
-   //Navbar
-   
-</script>
+<script src="script.js"></script>
        
     
 
